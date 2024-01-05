@@ -12,6 +12,8 @@ services:
             - nodeapp2
             - nodeapp3
             - nodeapp4
+            - nodeapp5
+            - nodeapp6
            
                    
     nodeapp1:
@@ -30,3 +32,11 @@ services:
         image: mainapp
         environment:
             - PORT=4444
+    nodeapp5:
+        image: serviceapp
+        environment:
+            - PORT=5555
+    nodeapp6:
+        image: serviceapp
+        environment:
+            - PORT=6666
